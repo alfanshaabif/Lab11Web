@@ -69,3 +69,21 @@ Maka hasilnya akan terjadi error seperti berikut.
 
 <img width="960" alt="8" src="https://user-images.githubusercontent.com/56286071/122176855-4066a700-ceaf-11eb-8251-dc21cb31d8d2.png">
 
+## LANGKAH 5
+### Membuat Route Baru
+Tambahkan kode berikut di dalam `app/config/Routes.php`
+
+<img width="960" alt="9" src="https://user-images.githubusercontent.com/56286071/122180884-0a2b2680-ceb3-11eb-9654-159e4dcf492d.png">
+
+Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perintah berikut.
+`php spark`
+
+Ketik perintah berikut untuk menjalankan server CI 4 pada port 8080.
+`php spark serve`
+
+<img width="696" alt="10" src="https://user-images.githubusercontent.com/56286071/122183127-23cd6d80-ceb5-11eb-99db-bdd8d10ca238.png">
+
+Selanjutnya coba `akses route` yang telah dibuat dengan mengakses alamat url http://localhost:8080/about seperti berikut. Maka hasilnya akan terjadi error, yang artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu `Controller` yang sesuai dengan routing yang dibuat yaitu `Controller Page`.
+
+<img width="960" alt="11" src="https://user-images.githubusercontent.com/56286071/122186926-b9b6c780-ceb8-11eb-86dd-4ad6f445c69e.png">
+
