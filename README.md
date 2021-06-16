@@ -131,3 +131,14 @@ Kemudian buat folder `template` pada direktori view kemudian buat file `header.p
 ### Hasilnya :
 
 <img width="960" alt="20" src="https://user-images.githubusercontent.com/56286071/122230234-a5d48b00-cee3-11eb-8b59-a06710825865.png">
+
+
+## Pertanyaan dan Tugas
+Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layout yang sama.
+
+### Hasilnya :
+
+<img width="960" alt="21" src="https://user-images.githubusercontent.com/56286071/122239224-f996a280-ceea-11eb-89b7-c4640af17258.png">
+
+<img width="960" alt="22" src="https://user-images.githubusercontent.com/56286071/122239276-01564700-ceeb-11eb-9953-35578658d6c9.png">
+
