@@ -70,7 +70,7 @@ Maka hasilnya akan terjadi error seperti berikut.
 <img width="960" alt="8" src="https://user-images.githubusercontent.com/56286071/122176855-4066a700-ceaf-11eb-8251-dc21cb31d8d2.png">
 
 ## LANGKAH 5
-### Membuat Route Baru
+## Membuat Route Baru
 Tambahkan kode berikut di dalam `app/config/Routes.php`
 
 <img width="960" alt="9" src="https://user-images.githubusercontent.com/56286071/122180884-0a2b2680-ceb3-11eb-9654-159e4dcf492d.png">
@@ -87,3 +87,47 @@ Selanjutnya coba `akses route` yang telah dibuat dengan mengakses alamat url htt
 
 <img width="960" alt="11" src="https://user-images.githubusercontent.com/56286071/122186926-b9b6c780-ceb8-11eb-86dd-4ad6f445c69e.png">
 
+## LANGKAH 6
+## Membuat Controller
+Selanjutnya adalah membuat `Controller Page`. Buat file baru dengan nama `page.php` pada direktori `Controller` kemudian isi kodenya seperti berikut.
+
+<img width="960" alt="12" src="https://user-images.githubusercontent.com/56286071/122229253-c9e39c80-cee2-11eb-8217-ff07645b4390.png">
+
+## LANGKAH 7
+## Auto Routing
+Secara default fitur autoroute pada `Codeiginiter` sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai `true` menjadi `false`. Kemudian tambahkan method baru pada `Controller Page` seperti berikut. Method ini belum ada pada `routing`, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
+
+<img width="960" alt="13" src="https://user-images.githubusercontent.com/56286071/122229400-e5e73e00-cee2-11eb-9990-b16a301d76e3.png">
+
+## LANGKAH 8
+### Membuat Views
+Selanjutnya adalah membuat `view` untuk tampilan web agar lebih menarik. Buat file baru dengan nama `about.php` pada direktori `view (app/view/about.php)` kemudian isi kodenya seperti berikut. Kemudian ubah method `about` pada class `Controller Page` menjadi seperti berikut.
+
+<img width="960" alt="14" src="https://user-images.githubusercontent.com/56286071/122229525-06af9380-cee3-11eb-9503-34c8ffbb0472.png">
+
+### Maka hasilnya seperti berikut
+
+<img width="960" alt="15" src="https://user-images.githubusercontent.com/56286071/122229606-18913680-cee3-11eb-94f9-5bf4eb40b8d1.png">
+
+## LANGKAH 9 
+## Membuat Layout Web dengan CSS
+Pada dasarnya layout web dengan `css` dapat diimplementasikan dengan mudah pada `Codeigniter`. Yang perlu diketahui adalah pada `Codeigniter 4` file yang menyimpan asset `css` dan `javascript` terletak pada direktori public. Buat file `css` pada direktori public dengan nama `style.css` seperti berikut.
+
+<img width="960" alt="16" src="https://user-images.githubusercontent.com/56286071/122229764-3a8ab900-cee3-11eb-9880-366130a99e6c.png">
+
+Kemudian buat folder `template` pada direktori view kemudian buat file `header.php` dan `footer.php` seperti berikut.
+
+<img width="960" alt="17" src="https://user-images.githubusercontent.com/56286071/122230038-76be1980-cee3-11eb-83ce-dfec25be0f77.png">
+
+### File app/view/template/header.php
+### File app/view/template/footer.php
+
+<img width="960" alt="18" src="https://user-images.githubusercontent.com/56286071/122230146-93f2e800-cee3-11eb-9635-d923040db6aa.png">
+
+### Kemudian ubah file app/view/about.php seperti berikut.
+
+<img width="960" alt="19" src="https://user-images.githubusercontent.com/56286071/122230195-9ce3b980-cee3-11eb-92e6-4b2166573f4f.png">
+
+### Hasilnya :
+
+<img width="960" alt="20" src="https://user-images.githubusercontent.com/56286071/122230234-a5d48b00-cee3-11eb-8b59-a06710825865.png">
