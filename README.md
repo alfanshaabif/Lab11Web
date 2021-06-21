@@ -105,7 +105,7 @@ Selanjutnya adalah membuat `view` untuk tampilan web agar lebih menarik. Buat fi
 
 <img width="960" alt="14" src="https://user-images.githubusercontent.com/56286071/122229525-06af9380-cee3-11eb-9503-34c8ffbb0472.png">
 
-### Maka hasilnya seperti berikut
+Maka hasilnya seperti berikut
 
 <img width="960" alt="15" src="https://user-images.githubusercontent.com/56286071/122229606-18913680-cee3-11eb-94f9-5bf4eb40b8d1.png">
 
@@ -119,16 +119,16 @@ Kemudian buat folder `template` pada direktori view kemudian buat file `header.p
 
 <img width="960" alt="17" src="https://user-images.githubusercontent.com/56286071/122230038-76be1980-cee3-11eb-83ce-dfec25be0f77.png">
 
-### File app/view/template/header.php
-### File app/view/template/footer.php
+`File app/view/template/header.php`
+`File app/view/template/footer.php`
 
 <img width="960" alt="18" src="https://user-images.githubusercontent.com/56286071/122230146-93f2e800-cee3-11eb-9635-d923040db6aa.png">
 
-### Kemudian ubah file app/view/about.php seperti berikut.
+Kemudian ubah file `app/view/about.php` seperti berikut.
 
 <img width="960" alt="19" src="https://user-images.githubusercontent.com/56286071/122230195-9ce3b980-cee3-11eb-92e6-4b2166573f4f.png">
 
-### Hasilnya :
+Hasilnya :
 
 <img width="960" alt="20" src="https://user-images.githubusercontent.com/56286071/122230234-a5d48b00-cee3-11eb-8b59-a06710825865.png">
 
@@ -142,3 +142,145 @@ Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga
 
 <img width="960" alt="22" src="https://user-images.githubusercontent.com/56286071/122239276-01564700-ceeb-11eb-9953-35578658d6c9.png">
 
+
+
+# Praktikum 12 ( Lanjutan Codeigniter )
+# Pemrograman Web
+
+```
+Alfansha Abiftyo Hadyatama
+311910321
+TI.19.A.2
+```
+
+## Persiapan
+Pastikan `MySQL server` sudah berjalan, Kemudian buat sebuah `database` dan `table` sebagai berikut:
+
+<img width="960" alt="1" src="https://user-images.githubusercontent.com/56286071/122739374-1c3f0780-d2ad-11eb-9ccd-13ab5ad83188.png">
+
+<img width="960" alt="2" src="https://user-images.githubusercontent.com/56286071/122739404-23661580-d2ad-11eb-8333-e8f463388feb.png">
+
+## LANGKAH 1
+## Konfigurasi Koneksi Database
+`Konfigurasi` dapat dilakukan dengan cara mengubah beberapa kode pada file `htdocs\lab11_php_ci\ci4\.env`.
+Dan hilangkan tanda pagar `#` didepan. Maka jadi seperti dibawah ini.
+
+<img width="960" alt="3" src="https://user-images.githubusercontent.com/56286071/122740254-fe25d700-d2ad-11eb-970c-e6f7502b3971.png">
+
+## LANGKAH 2
+## Membuat Model
+Selanjutnya adalah `membuat Model` untuk memproses `data Artikel`. Buat file baru pada direktori `app/Models` dengan nama `ArtikelModel.php`
+
+<img width="960" alt="4" src="https://user-images.githubusercontent.com/56286071/122740519-404f1880-d2ae-11eb-98fd-8bf9b7c5d396.png">
+
+## LANGKAH 3
+## Membuat Controller
+Buat `Controller` baru dengan nama `Artikel.php` pada direktori `app/Controllers`.
+
+<img width="960" alt="5" src="https://user-images.githubusercontent.com/56286071/122740666-65438b80-d2ae-11eb-84b4-b8d4ac6e99e6.png">
+
+## LANGKAH 4
+## Membuat View
+Buat folder baru dengan nama `artikel` pada direktori `app/views`, kemudian buat file baru dengan nama `index.php`.
+
+<img width="960" alt="6" src="https://user-images.githubusercontent.com/56286071/122740787-860be100-d2ae-11eb-8f10-08670c8480c3.png">
+
+Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
+
+<img width="960" alt="7" src="https://user-images.githubusercontent.com/56286071/122740878-9c19a180-d2ae-11eb-9c90-71c18846983f.png">
+
+Belum ada `data` yang diampilkan. Kemudian coba tambahkan beberapa `data` pada `database` agar dapat ditampilkan `datanya`.
+
+<img width="960" alt="8" src="https://user-images.githubusercontent.com/56286071/122741356-12b69f00-d2af-11eb-8d29-4d7780d50a6e.png">
+
+Refresh kembali browser, sehingga akan ditampilkan hasilnya.
+
+<img width="960" alt="9" src="https://user-images.githubusercontent.com/56286071/122741688-6628ed00-d2af-11eb-8772-e15e1c6b020c.png">
+
+## LANGKAH 5
+## Membuat Tampilan Detail Artikel
+Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada `Controller Artikel` dengan nama `view()`.
+
+<img width="960" alt="10" src="https://user-images.githubusercontent.com/56286071/122741909-a1c3b700-d2af-11eb-855d-a3da359f077b.png">
+
+## LANGKAH 6
+## Membuat View Detail
+Buat `view` baru untuk halaman detail dengan nama `app/views/artikel/detail.php`.
+
+<img width="960" alt="11" src="https://user-images.githubusercontent.com/56286071/122742370-11d23d00-d2b0-11eb-8c13-b216e2c74f53.png">
+
+## LANGKAH 7
+## Membuat Routing Untuk Artikel Detail
+Buka Kembali file `app/config/Routes.php`, kemudian tambahkan `routing` untuk `artikel detail`.
+
+<img width="960" alt="12" src="https://user-images.githubusercontent.com/56286071/122742546-40e8ae80-d2b0-11eb-821c-2d6671caea15.png">
+
+Maka akan tampil halaman dari artikel yang di klik.
+
+<img width="960" alt="13" src="https://user-images.githubusercontent.com/56286071/122742664-61b10400-d2b0-11eb-92a1-9b658a0f8a7b.png">
+
+## LANGKAH 8
+## Membuat Menu Admin
+Buat method baru pada `Controller Artikel` dengan nama `admin_index()`.
+
+<img width="960" alt="14" src="https://user-images.githubusercontent.com/56286071/122742787-84dbb380-d2b0-11eb-9914-3b92ea338b46.png">
+
+Kemudian buat `view` untuk tampilan `admin` dengan nama `admin_index.php`.
+
+<img width="960" alt="15" src="https://user-images.githubusercontent.com/56286071/122742896-a046be80-d2b0-11eb-8791-68b7431d2f53.png">
+
+Tambahkan `routing` untuk `menu admin` seperti berikut:
+
+<img width="960" alt="16" src="https://user-images.githubusercontent.com/56286071/122742968-b785ac00-d2b0-11eb-8090-f5662bdc0e74.png">
+
+Setelah itu buat `template header` dan `footer` baru untuk `Halaman Admin`. Buat file baru dengan nama `admin_header.php` pada direktori `app/view/template`
+
+<img width="960" alt="17" src="https://user-images.githubusercontent.com/56286071/122743095-dd12b580-d2b0-11eb-9236-5cfb12f594b2.png">
+
+Dan Buat file baru lagi dengan nama `admin_footer.php` pada direktori `app/view/template`
+
+<img width="960" alt="18" src="https://user-images.githubusercontent.com/56286071/122743166-f3207600-d2b0-11eb-84ad-7833c841aa36.png">
+
+Kemudian buat file baru lagi dengan nama `admin.css` pada direktori `ci4/public` untuk mempercantik tampilan `Halaman Admin`.
+
+<img width="960" alt="19" src="https://user-images.githubusercontent.com/56286071/122743286-0fbcae00-d2b1-11eb-860e-5943f974277e.png">
+
+<img width="960" alt="20" src="https://user-images.githubusercontent.com/56286071/122743332-1a774300-d2b1-11eb-9a88-1929e22a0404.png">
+
+Akses `menu admin` dengan url http://localhost:8080/admin/artikel
+
+<img width="960" alt="21" src="https://user-images.githubusercontent.com/56286071/122743434-2ebb4000-d2b1-11eb-828c-7e77d9d5b91e.png">
+
+## LANGKAH 9
+## Menambahkan Data Artikel
+Tambahkan fungsi/method baru pada `Controller Artikel` dengan nama `add()`.
+
+<img width="960" alt="22" src="https://user-images.githubusercontent.com/56286071/122744354-18fa4a80-d2b2-11eb-991a-2f38b205a0bb.png">
+
+Kemudian buat `view` untuk `form tambah` dengan nama `form_add.php`
+
+<img width="960" alt="23" src="https://user-images.githubusercontent.com/56286071/122744441-2d3e4780-d2b2-11eb-9071-87b85dde1546.png">
+
+Klik menu `Tambah Artikel` dan inilah hasilnya.
+
+<img width="960" alt="24" src="https://user-images.githubusercontent.com/56286071/122744515-3fb88100-d2b2-11eb-9341-a336a1593b9c.png">
+
+## LANGKAH 10
+## Mengubah Data
+Tambahkan fungsi/method baru pada `Controller Artikel` dengan nama `edit()`.
+
+<img width="960" alt="25" src="https://user-images.githubusercontent.com/56286071/122744627-5c54b900-d2b2-11eb-84a5-a00ed1a18741.png">
+
+Kemudian buat `view` untuk `form tambah` dengan nama `form_edit.php`
+
+<img width="960" alt="26" src="https://user-images.githubusercontent.com/56286071/122744743-7e4e3b80-d2b2-11eb-95cd-5de968758a82.png">
+
+Klik ubah pada salah satu `artikel` dan inilah hasilnya :
+
+<img width="960" alt="27" src="https://user-images.githubusercontent.com/56286071/122744820-96be5600-d2b2-11eb-9730-8c8c23f2e89b.png">
+
+## LANGKAH 11
+## Menghapus Data
+Tambahkan fungsi/method baru pada `Controller Artikel` dengan nama `delete()`.
+
+<img width="960" alt="28" src="https://user-images.githubusercontent.com/56286071/122744949-b5245180-d2b2-11eb-87cd-15e7fc6e407c.png">
