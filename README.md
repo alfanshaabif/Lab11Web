@@ -1,7 +1,12 @@
-# Praktikum 11 & Praktikum 12 ( Codeigniter ) - Pemrograman Web 
+# Praktikum 11 & Praktikum 12 ( Codeigniter ) 
 
-
-
+`
+Pertemuan ke-12 & Pertemuan ke-13
+Pemrograman Web 
+Agung Nugroho,S.Kom.,M.Kom. 
+TI.19.A.2 
+UNIVERSITAS PELITA BANGSA 
+`
 
 # Praktikum 11
 # Pemrograman Web
