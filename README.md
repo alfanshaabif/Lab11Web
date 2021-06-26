@@ -1,12 +1,4 @@
-# Praktikum 11 & Praktikum 12 ( Codeigniter ) 
-```
-Pertemuan ke-12 & Pertemuan ke-13
-Pemrograman Web 
-TI.19.A.2
-UNIVERSITAS PELITA BANGSA
-```
-
-# Praktikum 11
+# Praktikum 11 - PHP Framework (Codeigniter)
 # Pemrograman Web
 ```
 Alfansha Abiftyo Hadyatama
@@ -152,7 +144,7 @@ Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga
 
 
 
-# Praktikum 12 ( Lanjutan Codeigniter )
+# Praktikum 12 - Framework Lanjutan (CRUD)
 # Pemrograman Web
 
 ```
@@ -292,3 +284,13 @@ Klik ubah pada salah satu `artikel` dan inilah hasilnya :
 Tambahkan fungsi/method baru pada `Controller Artikel` dengan nama `delete()`.
 
 <img width="960" alt="28" src="https://user-images.githubusercontent.com/56286071/122744949-b5245180-d2b2-11eb-87cd-15e7fc6e407c.png">
+
+
+# Praktikum 13 - Framework Lanjutan (Modul Login)
+# Pemrograman Web
+```
+Alfansha Abiftyo Hadyatama
+311910321
+TI.19.A.2
+```
+
