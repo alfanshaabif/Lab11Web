@@ -393,3 +393,61 @@ Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebu
 <img width="960" alt="18" src="https://user-images.githubusercontent.com/56286071/123525115-c88f4c80-d6f8-11eb-95ab-a9842880c8b8.png">
 
 <img width="960" alt="19" src="https://user-images.githubusercontent.com/56286071/123525116-cd540080-d6f8-11eb-9520-69945c1c61cc.png">
+
+
+# Praktikum 14 - Pagination dan Pencarian
+# Pemrograman Web
+```
+Alfansha Abiftyo Hadyatama
+311910321
+TI.19.A.2
+```
+
+## LANGKAH 1
+## Membuat Pagination
+`Pagination` merupakan proses yang digunakan untuk membatasi tampilan yang panjang dari data yang banyak pada sebuah website. `Fungsi pagination` adalah memecah 
+tampilan menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan pada setiap halaman. Pada `Codeigniter 4`, `fungsi pagination` sudah tersedia pada Library sehingga cukup mudah menggunakannya. Untuk membuat `pagination`, buka Kembali `Controller Artikel` - `htdocs\lab11_php_ci\ci4\Controllers\Artikel.php`, kemudian modifikasi kode pada method `admin_index` seperti berikut.
+
+<img width="960" alt="1" src="https://user-images.githubusercontent.com/56286071/125151175-70802d80-e16f-11eb-9896-fc952d53c448.png">
+
+Kemudian buka file `views/artikel/admin_index.php` dan tambahkan kode berikut dibawah deklarasi tabel data.
+
+<img width="960" alt="2" src="https://user-images.githubusercontent.com/56286071/125151193-868dee00-e16f-11eb-9900-d82a1a90d9b0.png">
+
+Selanjutnya buka kembali menu `daftar artikel`, tambahkan `data` lagi untuk melihat hasilnya.
+
+<img width="960" alt="3" src="https://user-images.githubusercontent.com/56286071/125151250-a02f3580-e16f-11eb-9f56-148aa25d1dcd.png">
+
+## LANGKAH 2
+## Membuat Pencarian
+Pencarian data digunakan untuk memfilter data.
+Untuk membuat pencarian data, buka kembali `Controller Artikel` - `htdocs\lab11_php_ci\ci4\Controllers\Artikel.php`, pada method `admin_index` ubah kodenya seperti berikut
+
+<img width="960" alt="4" src="https://user-images.githubusercontent.com/56286071/125151620-a1f9f880-e171-11eb-9a64-d82ce69959ab.png">
+
+Kemudian buka kembali file `views/artikel/admin_index.php` dan tambahkan form pencarian sebelum deklarasi tabel seperti berikut:
+
+<img width="960" alt="5" src="https://user-images.githubusercontent.com/56286071/125151634-c0f88a80-e171-11eb-98a0-3f8516c71534.png">
+
+Dan pada link pager ubah seperti berikut.
+
+<img width="960" alt="6" src="https://user-images.githubusercontent.com/56286071/125151637-ca81f280-e171-11eb-8492-f7c4b634d9ff.png">
+
+Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata kunci tertentu pada form pencarian.
+
+<img width="960" alt="7" src="https://user-images.githubusercontent.com/56286071/125151644-dd94c280-e171-11eb-9c6c-f3300e109d0f.png">
+
+## LANGKAH 3
+## Upload Gambar
+Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali `Controller Artikel` - `htdocs\lab11_php_ci\ci4\Controllers\Artikel.php`, sesuaikan kode pada `method add` seperti berikut:
+
+<img width="960" alt="8" src="https://user-images.githubusercontent.com/56286071/125151746-8e02c680-e172-11eb-8112-132b4bba80fd.png">
+
+Kemudian pada file `views/artikel/form_add.php` tambahkan field input file seperti berikut.
+Dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut.
+
+<img width="960" alt="9" src="https://user-images.githubusercontent.com/56286071/125151764-b5f22a00-e172-11eb-943a-e8e8ca086dc4.png">
+
+Ujicoba file upload dengan mengakses `menu tambah artikel`.
+
+<img width="960" alt="10" src="https://user-images.githubusercontent.com/56286071/125151773-c5717300-e172-11eb-8205-6c1b9e99074c.png">
